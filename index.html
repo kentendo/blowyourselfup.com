@@ -4,6 +4,7 @@
   <title>hello world</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <style>
 
 
@@ -11,17 +12,33 @@
 </head>
 <body>
 
-  <form action="other.html" method="post">
-    <p><input type="text" name="firstName"></p>
-    <p><input type="text" name="lastName"></p>
-    <p><button type="submit">submit</button></p>
-  </form>
+  <div class="container">
+    <h1>Regex Lesson</h1>
+    <p>Location: <i><span id="location"></span></i></p>
+    
+    <form name="myForm">
+
+      <div id="message"></div>
+      
+      <div class="form-group">
+        <label class="control-label">Email</label>
+        <input name="email" class="form-control email" type="text" placeholder="Enter email address">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label">Email Confirmation</label>
+        <input name="email2" class="form-control email" type="text" placeholder="Confirm email address">
+      </div>
+
+      <div class="form-group">
+        <button>Submit</button>
+      </div>
+
+    </form>
+  </div>
 
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script>
-
-
-</script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
